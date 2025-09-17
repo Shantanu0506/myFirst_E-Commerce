@@ -28,18 +28,9 @@ function Register() {
     };
 
     const onSubmitHandler = (event) => {
-        setErrors({});
-        setFormData(
-            {
-                firstname: '',
-                lastname: '',
-                email: '',
-                password: '',
-                country: '',
-                remember:''
-            }
-        );
         event.preventDefault();
+        setErrors({});
+
 
         if (FormData.firstname === '' || FormData.firstname === null) {
             //alert("First Name is must!!!");
@@ -48,7 +39,8 @@ function Register() {
                     fname: "First Name is required!"
                 }
             );
-            navigate('/Register');
+            return;
+
         }
         else if (FormData.password.length < 6 || FormData.password.length > 12) {
             //alert("Password must be more than 6 and less than 12 ");
@@ -56,12 +48,29 @@ function Register() {
                 {
                     pass: 'Password must be more than 6 and less than 12'
                 }
-            )
+            );
+            return;
         }
         else {
             console.log(FormData);
         }
+
+        setFormData(
+        {
+            firstname: '',
+            lastname: '',
+            email: '',
+            password: '',
+            country: '',
+            remember: false
+        }
+    );
+
+    navigate('/login');
+
     };
+
+    
 
     return (
 

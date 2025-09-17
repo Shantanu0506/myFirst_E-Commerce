@@ -127,6 +127,7 @@ code {
 .back-btn {
   display: inline-block;
   margin-top: 15px;
+  margin-left: 15px;
   padding: 10px 20px;
   background: #007bff;
   color: white;
@@ -137,4 +138,47 @@ code {
 
 .back-btn:hover {
   background: #0056b3;
+}
+
+
+
+.product-btn {
+  font-size: 20px black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  margin:0px 0px 6px 130px ;
+  background-color:rgb(6, 6, 46);
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px 5px 15px;
+}
+.product-img {
+  width: 220px;        
+  height: 400px;       
+  object-fit:contain;   
+  border-radius: 10px;
+  border: 2px solid; 
+  margin: auto;        
+  display: block;
+}
+
+.product-btn {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0f073b;
+  color: #eecaca;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-btn:hover {
+  background-color:#ff3bc7;
 }

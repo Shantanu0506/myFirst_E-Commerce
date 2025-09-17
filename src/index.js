@@ -15,6 +15,11 @@ import Error from './Component/Error';
 import './index.css';
 import ThemeProvider from './Context/ThemeContext';
 import PrductDetails from './Component/ProductDetails';
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ReactMemo from './Memo/ReactMemo';
+import { UseMemo } from './Memo/UseMemo';
+
 
 const MyRouter = createBrowserRouter([
   {
@@ -53,6 +58,14 @@ const MyRouter = createBrowserRouter([
       {
         path: '/productdetails/:pid',
         element: <PrductDetails />
+      },
+      {
+        path: '/reactmemo',
+        element: <ReactMemo />
+      },
+      {
+        path: '/usememo',
+        element: <UseMemo />
       }
 
     ]

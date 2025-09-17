@@ -5,7 +5,7 @@ function CardList(props) {
     // console.log(products2);
     return (
         <>
-            <p>Products!!</p>
+            <h3 className="text-center bg-success">Our Products!!</h3>
            {
             products2 && products2.map((p, ind)=>{
                 return (

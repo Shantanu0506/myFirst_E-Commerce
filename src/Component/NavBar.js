@@ -34,14 +34,15 @@ function NavBar() {
                                 <NavLink className="nav-link active" to={"/home"}>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={"/about"}>About Us!</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to={"/login"}>Login</NavLink>
+                                <NavLink className="nav-link" to={"/about"}>Register(React Library)!</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to={"/register"}>Register</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to={"/error"}>Error</NavLink>
+                            </li>
+                            
                             <li className="nav-item">
                                 <NavLink className="nav-link" to={"/contacts"}>Contact Us!</NavLink>
                             </li>

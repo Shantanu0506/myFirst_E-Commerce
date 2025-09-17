@@ -12,14 +12,22 @@ function App() {
 
     return (
         <>
-            <h1>E-Book Shop</h1>
-            <div id="button-group">
+            <h1 className="text-center">E-Gadgets Shop</h1>
+            <div className="row">
+                <div className="col-3"></div>
+                <div className="col-6">
+        <div id="button-group">
                 <button onClick={() => setUrl("http://localhost:3000/products")}>All</button>
                 <button onClick={() => setUrl("http://localhost:3000/products?category=mobile")}>Smart_Phone</button>
                 <button onClick={() => setUrl("http://localhost:3000/products?category=watch")}>Smart_Watch</button>
                 <button onClick={() => setUrl("http://localhost:3000/products?category=tv")}>Smart_Tv</button>
                 <button onClick={() => setUrl("http://localhost:3000/products?category=washing_machine")}>Washing_Machine</button>
             </div>
+                </div>
+                <div className="col-3"></div>
+
+            </div>
+            
 
             {
                 load && <button className="btn btn-primary">
